@@ -1,0 +1,5 @@
+{
+	"description": "A default min and maximum viewport sizes used to generate fluid type and space scales.",
+	"min": 320,
+	"max": 1280
+}
