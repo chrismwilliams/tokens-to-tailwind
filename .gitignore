@@ -1,0 +1,10 @@
+# dependencies
+node_modules/
+
+# logs
+pnpm-debug.log*
+
+# macOS-specific files
+.DS_Store
+
+dist/
