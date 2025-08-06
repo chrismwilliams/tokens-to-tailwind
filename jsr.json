@@ -1,8 +1,9 @@
 {
-	"$schema": "https://jsr.io/schema/config-file.v1.json",
-	"name": "@chriswilliams/tokens-to-tailwind",
-	"version": "0.1.1",
-	"exports": {
-		".": "./src/index.ts"
-	}
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
+  "name": "@chriswilliams/tokens-to-tailwind",
+  "version": "0.2.0",
+  "exports": {
+    "./clamp-generator": "./src/utils/clamp-generator.ts",
+    "./tokens-to-tailwind": "./src/utils/tokens-to-tailwind.ts"
+  }
 }

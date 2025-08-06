@@ -1,19 +1,17 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.1/schema.json",
-	"organizeImports": {
-		"enabled": true
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
-		}
-	},
-	"formatter": {
-		"formatWithErrors": true
-	},
-	"files": {
-		"ignoreUnknown": true,
-		"ignore": ["node_modules/**", "dist/**"]
-	}
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "formatter": {
+    "formatWithErrors": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**", "!**/node_modules/**", "!**/dist/**"]
+  }
 }
