@@ -41,10 +41,10 @@ const defaultColorFunctionOptions: Required<ColorFunctionOptions> = {
  * // => { black: 'oklch(var(--color-black) / <alpha-value>)' }
  * ```
  */
-export const wrapColorTokens = (
-	colorTokens: Record<string, string>,
+export const wrapColorTokens = <T extends Record<string, string>>(
+	colorTokens: T,
 	colorFunctionOptions = {},
-) => {
+): { [K in keyof T]: string } => {
 	const isRawCssKeyword = (value: string) =>
 		["transparent", "inherit", "currentColor", "initial", "unset"].includes(
 			value,
